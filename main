@@ -1,0 +1,38 @@
+#include <iostream>
+#include <time.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+//Variables
+int main(int argc, char** arc){
+int col=0, fil=0;
+int matrizA [col][fil];
+int i,j;
+srand(time(NULL));
+
+
+
+//Proceso
+printf ("Declara tu matriz, que no sea mayor a 20 \n");
+printf("Ingresa las columnas \n");
+scanf("%d", &col);
+printf("Ingresa las filas \n");
+scanf("%d", &fil);
+for (i=0; i<col; i++){
+	for (j=0; j<fil; j++){
+		matrizA[i][j]=rand()%10;
+	}
+}
+printf("%d",matrizA[i][j]);
+
+
+
+
+
+	
+	
+	
+	
+	return 0;
+}
